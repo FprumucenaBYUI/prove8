@@ -41,7 +41,7 @@
                                 <%- include ('../includes/products-shop.ejs', {data: data}) %>
                             </div>
                             <!-- PAGINATION-->
-                            <%- include('../includes/pagination.ejs', {searchedValue: searchedValue, page: page, numPages: numPages}) %>
+                            <%- include('../includes/pagination.ejs', {currentPage: page, lastPage: numPages, nextPage: nextPage, previousPage: previousPage, hasNextPage: hasNextPage, hasPreviousPage: hasPreviousPage }) %>
                         </div>
                     </div>
                 </div>
